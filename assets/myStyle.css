@@ -1,0 +1,59 @@
+.header
+{
+    padding: 20px;
+    text-align: center;
+}
+
+body
+{
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: arial;
+    font-size: 16pt;
+}
+
+.content
+{
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.leftcolumn
+{
+    background-color: #f1f1f1;
+    float: left;
+    width: 25%;
+}
+
+.rightcolumn
+{
+    float: left;
+    width: 65%;
+}
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a
+{
+  background-color: white;
+  color: black;
+}
+
+a:hover
+{
+  background-color: #f1f1f1;
+  color: blue;
+}
