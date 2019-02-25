@@ -4,48 +4,37 @@
         <script type="text/javascript" src="assets/cssmanipulation.js"></script>
     </head>
     <body>
-        <br>
-            <div class="row">
-                <div class="leftcolumn" style="width: 30%;
-                                               padding-top: 30px;
-                                               padding-bottom: 30px;
-                                               padding: 30px;
-                                               text-align: right;"> 
-                    Border Color (Values are 0-255):
-                </div>
-                <div class="rightcolumn" style="width: 30%; padding: 30px;">
-                    R: <input type="text" id="borderRed" value="0" size="3"><br>
-                    G: <input type="text" id="borderGreen" value="0" size="3"><br>
-                    B: <input type="text" id="borderBlue" value="0" size="3"><br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="leftcolumn" style="width: 30%;
-                                               padding-top: 30px;
-                                               padding-bottom: 30px;
-                                               padding: 30px;
-                                               text-align: right;"> 
-                    Background Color (Values are 0-255):
-                </div>
-                <div class="rightcolumn" style="width: 30%; padding: 30px;">
-                    R: <input type="text" id="backgroundRed" value="255" size="3"><br>
-                    G: <input type="text" id="backgroundGreen" value="255" size="3"><br>
-                    B: <input type="text" id="backgroundBlue" value="255" size="3"><br>
-                </div>
-            </div>
+      <div class="content">
+      <div class="row">
+        <div class="leftcolumn" style="padding: 20px; text-align: right;"> 
+          Border Color (Values are 0-255):
+        </div>
+        <div class="rightcolumn" style="padding: 20px;">
+          R: <input type="text" id="borderRed" value="0" size="3">
+          G: <input type="text" id="borderGreen" value="0" size="3">
+          B: <input type="text" id="borderBlue" value="0" size="3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="leftcolumn" style="padding: 20px; text-align: right;"> 
+          Background Color (Values are 0-255):
+        </div>
+        <div class="rightcolumn" style="padding: 20px;">
+          R: <input type="text" id="backgroundRed" value="255" size="3">
+          G: <input type="text" id="backgroundGreen" value="255" size="3">
+          B: <input type="text" id="backgroundBlue" value="255" size="3">
+          <button align="center" onclick="setCSS()">Submit</button>
+        </div>
+      </div>
 
-                <button onclick="setCSS()">Submit</button>
+      <p style="text-align: justify; border-radius: 5px" class="lorem">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris libero, semper ut 
+      commodo non, suscipit ac justo. Etiam iaculis mauris ac justo ultrices euismod. Ut ultricies,
+      diam at porttitor lobortis, purus tellus vulputate neque, sed vulputate turpis dolor at arcu.
+      Suspendisse porttitor ante id ipsum fringilla eleifend. In scelerisque et purus id commodo. 
+      Nam quis imperdiet dui. Maecenas blandit eget metus id interdum.
+      </p>
 
-        <p style="text-align: justify" class="lorem">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris libero, semper ut commodo non, suscipit ac justo. Etiam iaculis mauris ac justo ultrices euismod. Ut ultricies, diam at porttitor lobortis, purus tellus vulputate neque, sed vulputate turpis dolor at arcu. Suspendisse porttitor ante id ipsum fringilla eleifend. In scelerisque et purus id commodo. Nam quis imperdiet dui. Maecenas blandit eget metus id interdum.</p>
-
-        <p style="text-align: justify" class="lorem">Praesent accumsan mattis orci eu tincidunt. Vivamus maximus, tellus vitae dapibus commodo, ligula erat suscipit nunc, a ultrices sem lorem nec odio. Aenean ullamcorper eros mauris, nec aliquam elit ultricies vitae. Nam orci justo, condimentum in leo vitae, auctor egestas quam. Maecenas at lacus interdum, imperdiet libero at, condimentum dolor. Donec aliquam vestibulum nisl non varius. Sed sollicitudin in felis quis eleifend. Aenean ligula mi, dictum ut commodo ac, luctus sit amet tortor. Sed vitae laoreet ante. Ut ornare iaculis dui, nec ornare leo egestas ut.</p>
-
-        <p style="text-align: justify" class="lorem">Aliquam aliquet mauris eget est vestibulum, ut eleifend neque tempor. Nullam et lorem condimentum mi pretium bibendum. Aliquam ut bibendum leo, sit amet cursus lectus. Praesent tincidunt at felis dignissim convallis. Pellentesque tristique lectus diam, in interdum justo dapibus vel. Ut eget leo sed lorem ornare convallis id vel nisi. Aenean ut lacus in ante feugiat vulputate. Nullam lacinia, ipsum non finibus tincidunt, est neque hendrerit eros, nec porta urna tellus vitae turpis. Aliquam dolor erat, vulputate quis ipsum quis, ultricies iaculis tellus.</p>
-
-        <p style="text-align: justify" class="lorem">Duis laoreet id lacus eu convallis. Praesent feugiat lorem metus, eu convallis turpis pulvinar in. Donec ullamcorper neque sit amet tellus sollicitudin, et tristique massa egestas. Sed ligula nisi, consectetur non cursus fringilla, cursus ut ipsum. Integer leo orci, bibendum malesuada mauris sit amet, fringilla efficitur elit. Cras nulla massa, ornare vitae commodo vitae, mattis sed neque. Quisque id elit ac ligula lacinia maximus. Vestibulum eget sem ipsum. Ut tellus justo, suscipit eget eros non, sodales porttitor libero. Suspendisse vel lectus malesuada, placerat est at, consequat orci. Vivamus ultricies id nunc ac convallis. Etiam mattis porttitor nisl, et elementum magna. Ut vitae elementum ligula, sed imperdiet ante. Quisque interdum lacus dui. Duis fringilla ante vitae tortor vulputate venenatis.</p>
-
-        <p style="text-align: justify" class="lorem">Mauris dapibus pharetra eleifend. Vestibulum pharetra hendrerit mi, ac auctor ante blandit ut. Sed tellus leo, aliquam eget dolor eget, finibus bibendum augue. Vestibulum convallis ipsum sit amet purus elementum convallis. Sed quis lacinia erat, sit amet pretium libero. Fusce consectetur leo non facilisis maximus. Integer sit amet elementum sem, ullamcorper sodales nisi. Maecenas id molestie arcu. Nullam rutrum viverra dolor vitae semper. Pellentesque tincidunt sollicitudin placerat. Praesent bibendum eget tortor sit amet tempus. Sed at sem id tortor tristique eleifend. Nullam finibus lacus ex, in maximus neque tempus ac. Pellentesque non nulla vitae neque ultrices tempus eget ac urna. Ut ut orci vel tellus imperdiet sagittis. Sed lectus libero, vehicula eget libero nec, vulputate facilisis mi.</p>
-        </p>
+      </div>
     </body>
 </html>
